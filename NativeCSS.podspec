@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.source_files = '*.h'
   s.preserve_paths = 'libnativeCSS.a'
-  s.library = 'NativeCSS', 'z'
+  s.library = 'NativeCSS'
   s.framework = 'UIKit', 'QuartzCore', 'CoreText', 'CoreImage', 'Accelerate'
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/NativeCSS"' }
 end
